@@ -1,4 +1,4 @@
-## quickstart-python
+## Docker Python Quickstart 🐳🐍
 
 A simple Python app (using Flask) which can easily be deployed to Docker.
 
@@ -15,14 +15,14 @@ $ docker run -d -p 5080 quickstart-python
 
 Alternatively, you can run the dockerized version:
 
-```
+```sh
 $ docker run -d -p 5080 mikespub/quickstart-python
 ```
 
 Your app should now be running:
 
-```
-curl 192.168.59.103:49153
+```sh
+$ curl 192.168.59.103:49153
 Hello World!</br>Hostname: ebf2b5258db0</br>Counter: Redis Cache not found, counter disabled.
 ```
 
@@ -30,7 +30,7 @@ Hello World!</br>Hostname: ebf2b5258db0</br>Counter: Redis Cache not found, coun
 
 [Install Docker Compose.](https://docs.docker.com/compose/install/)
 
-```
+```sh
 $ docker-compose up 
 ```
 
@@ -38,7 +38,7 @@ $ docker-compose up
 
 [Install Docker App.](https://github.com/docker/app#installation)
 
-```
+```sh
 $ docker app init --compose-file docker-compose.yml python-app
 $ ...
 $ docker app inspect python-app.dockerapp
