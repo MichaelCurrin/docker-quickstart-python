@@ -25,6 +25,8 @@ Your app should now be running:
 
 ```sh
 $ curl 192.168.59.103:49153
+```
+```
 Hello World!</br>Hostname: ebf2b5258db0</br>Counter: Redis Cache not found, counter disabled.
 ```
 
@@ -34,7 +36,7 @@ Hello World!</br>Hostname: ebf2b5258db0</br>Counter: Redis Cache not found, coun
 [Install Docker Compose](https://docs.docker.com/compose/install/)
 
 ```sh
-$ docker-compose up 
+$ docker compose up --build
 ```
 
 
